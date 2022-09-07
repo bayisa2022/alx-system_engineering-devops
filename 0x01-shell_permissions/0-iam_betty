@@ -1,2 +1,2 @@
 #!/bin/bash
-lu betty
+su betty
