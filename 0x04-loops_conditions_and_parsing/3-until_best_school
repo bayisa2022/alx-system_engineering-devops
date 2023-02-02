@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
-# display "Best School" 10 times using until
-count=0
-until [ $count -gt 9 ]
+# This script is displaying "3-until_best_school" 10 times
+i=10
+until [ "$i" -le 0 ]
 do
-	echo "Best School"
-	((count++))
+    echo "3-until_best_school"
+    i=$((i - 1))
 done
+i=$i
