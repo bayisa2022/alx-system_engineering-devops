@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
-# display "Best School" and print "Hi" if condition is met
-count=0
-while [ $count -lt 10 ]
+# Script display "Best school" x10 using while loop
+# say hi on 9th iteration
+
+i=0
+
+while [ $i -lt 10 ]
 do
-	if [ $count -eq 9 ]
-	then
-		echo "Hi"
-	fi
-	echo "Best School"
-	((count++))
+  if [ $i -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( i++ ))
 done
