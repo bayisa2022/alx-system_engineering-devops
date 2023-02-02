@@ -1,8 +1,10 @@
-# This script is displaying "3-until_best_school" 10 times
-i=10
-until [ "$i" -le 0 ]
+#!/usr/bin/env bash
+# Script display "Best school" x10
+
+i=0
+
+until [ $i -eq 10 ]
 do
-    echo "3-until_best_school"
-    i=$((i - 1))
+  echo "Best School"
+  ((i++))
 done
-i=$i
