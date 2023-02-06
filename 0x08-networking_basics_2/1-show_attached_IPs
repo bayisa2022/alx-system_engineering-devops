@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-# Displays all acive IPv4 addresses on the machine.
 
-ip -f inet addr | grep -oP "(?<=inet )[^\/]*"
+# script that displays all active IPv4 IPs on the machine it’s executed on.
+
+ifconfig -a | sed -n "/inet /p" | cut -d " " -f 10
+
