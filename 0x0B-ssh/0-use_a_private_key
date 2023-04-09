@@ -1,0 +1,14 @@
+#!/bin/bash
+# Define the server address and the private key file
+SERVER="user@host"
+KEYFILE="~/.ssh/id_rsa"
+
+# Check if the key file exists and is readable
+if [ -f "$KEYFILE" ] && [ -r "$KEYFILE" ]; then
+  # Use ssh with the -i option to specify the key file
+  ssh -i "$KEYFILE" "$SERVER"
+else
+  # Print an error message and exit with a non-zero status
+  echo "Key file $KEYFILE does not exist or is not readable"
+  exit 1
+fi
