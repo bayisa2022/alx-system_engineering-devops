@@ -1,10 +1,6 @@
-Networking basics #1 This project was the second of two introducing networking. I continued to learn about IP addresses while practicing manipulating them with Bash scripts.
+In this debugging series, broken/bugged webstacks will be given to you, the final goal is to come up with a Bash script that once executed, will bring the webstack to a working state. But before writing this Bash script, you should figure out what is going on and fix it manually.
 
-Tasks í³ƒ 0. Change your home IP
+Letâ€™s start with a very simple example. My server must:
 
-0-change_your_home_IP: Bash script that configures an Ubuntu server as follows: localhost resolves to 127.0.0.2 facebook.com resolves to 8.8.8.8
-
-Show attached IPs
-1-show_attached_IPs: Bash script that displays all active IPv4 IP's on the machine. 100. Port listening on localhost
-
-100-port_listening_on_localhost: Bash script that listens on port 98 on localhost.
+have a copy of the /etc/passwd file in /tmp
+have a file named /tmp/isworking containing the string OK
