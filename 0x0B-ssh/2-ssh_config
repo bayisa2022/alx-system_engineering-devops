@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-# Configure SSH configuration file
-Iclude /etc/ssh/ssh_config.d/*.conf
-
+# ssh config file
 Host *
-IdentityFile ~/.ssh/school
-PasswordAuthentication no
+      PasswordAuthentication no
+      IdentifyFile ~/.ssh/school
